@@ -13,6 +13,7 @@ namespace Plusminuszero.Controllers
         {
             return View();
         }
+<<<<<<< HEAD
 
 
 
@@ -39,5 +40,7 @@ namespace Plusminuszero.Controllers
 
 
 
+=======
+>>>>>>> fc62651255e26994f67cdbe2e90e24faeb6fef30
     }
 }

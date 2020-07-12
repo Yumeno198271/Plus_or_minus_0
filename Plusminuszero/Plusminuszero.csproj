@@ -167,13 +167,19 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+<<<<<<< HEAD
     <Compile Include="Controllers\AboutController.cs" />
+=======
+>>>>>>> fc62651255e26994f67cdbe2e90e24faeb6fef30
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HomepageController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+<<<<<<< HEAD
     <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\PortfolioController.cs" />
+=======
+>>>>>>> fc62651255e26994f67cdbe2e90e24faeb6fef30
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -399,6 +405,7 @@
     <Content Include="Assets\fonts\Pe-icon-7-stroke.eot" />
     <Content Include="Assets\fonts\Pe-icon-7-stroke.ttf" />
     <Content Include="Assets\fonts\Pe-icon-7-stroke.woff" />
+<<<<<<< HEAD
     <Content Include="Assets\ajax\.DS_Store" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.5.1.js" />
@@ -410,6 +417,14 @@
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+=======
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+>>>>>>> fc62651255e26994f67cdbe2e90e24faeb6fef30
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -450,6 +465,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Homepage\Index.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\About\Index.cshtml" />
     <Content Include="Views\News\Event_News.cshtml" />
     <Content Include="Views\Portfolio\Portfolio_Masonry.cshtml" />
@@ -463,6 +479,8 @@
     <Content Include="Views\Portfolio\Portfolio_2column.cshtml" />
     <Content Include="Views\Portfolio\Portfolio_3column.cshtml" />
     <Content Include="Views\Homepage\Single_Project.cshtml" />
+=======
+>>>>>>> fc62651255e26994f67cdbe2e90e24faeb6fef30
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -477,6 +495,11 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="packages.config" />
+<<<<<<< HEAD
+=======
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+>>>>>>> fc62651255e26994f67cdbe2e90e24faeb6fef30
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
