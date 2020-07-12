@@ -1,0 +1,260 @@
+﻿
+
+@{
+    Layout = null;
+}
+
+
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>OAK - HTML Theme</title>
+    <meta name="description" content="">
+    <meta name="msapplication-tap-highlight" content="yes" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" />
+
+
+    <!-- Google Web Font -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lekton:400,700,400italic' rel='stylesheet' type='text/css'>
+
+
+
+    <link href="~/Assets/css/bootstrap.min.css" rel="stylesheet" />
+
+
+    <link href="~/Assets/css/owl.carousel.css" rel="stylesheet" />
+    <link href="~/Assets/css/owl.theme.css" rel="stylesheet" />
+
+    <link href="~/Assets/css/jquery.kenburnsy.css" rel="stylesheet" />
+
+
+    <link href="~/Assets/css/animate.css" rel="stylesheet" />
+
+
+
+
+
+    <link href="~/Assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    <link href="~/Assets/css/iconmoon.css" rel="stylesheet" />
+    <link href="~/Assets/css/et-line.css" rel="stylesheet" />
+    <link href="~/Assets/css/ionicons.css" rel="stylesheet" />
+
+
+    <link href="~/Assets/css/magnific-popup.css" rel="stylesheet" />
+
+
+    <link href="~/Assets/css/tabs.css" type="text/css" rel="stylesheet" />
+    <link href="~/Assets/css/tabstyles.css" type="text/css" rel="stylesheet" />
+
+    <link href="~/Assets/css/loader-1.css" rel="stylesheet" />
+
+
+
+    <link href="~/Assets/css/main.css" rel="stylesheet" />
+
+
+    <link rel="icon" type="image/ico" href="~/favicon.ico">
+
+    <script src="~/Assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    @section topCSS{
+        <style>
+            html,
+            body {
+                height: 100%;
+                overflow: hidden;
+            }
+        </style>
+
+    }
+
+</head>
+<body>
+
+
+
+
+
+
+    <div class="header has-slider">
+        <div class="container">
+            <br><br><br>
+            <div class="logo">
+                <a href="@Url.Content("~/Homepage/Index")">
+                    <img src="~/Assets/img/logo.png" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Menu Hamburger (Default) -->
+            <button class="main-menu-indicator" id="open-button">
+                <span class="line"></span>
+            </button>
+
+            <div class="menu-wrap" style="background-image: url(../../Assets/img/nav_bg.jpg)">
+                <div class="menu-content">
+                    <div class="navigation">
+                        <span class="pe-7s-close close-menu" id="close-button"></span>
+                        <div class="search-wrap js-ui-search">
+                            <input class="js-ui-text" type="text" placeholder="Search Here...">
+                            <span class="eks js-ui-close"></span>
+                        </div>
+                    </div>
+                    <nav class="menu">
+                        <div class="menu-list">
+                            <ul>
+                                <li class="menu-item-has-children">
+                                    <a href="@Url.Content("~/Homepage/Index")">Home</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="@Url.Content("~/Homepage/Index")">- Default</a></li>
+                                        <li><a href="@Url.Content("~/Homepage/Homepage_Architecture")">- Architecture</a></li>
+                                        <li><a href="@Url.Content("~/Homepage/Slider_Full_Width")">- Slider Full Width</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="@Url.Content("~/About/Index")">About</a></li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">News</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="@Url.Content("~/News/Event_News")">-Event News</a></li>
+                                        <li><a href="@Url.Content("~/News/Product_Information")">-Product Information</a></li>
+                                        <li><a href="@Url.Content("~/News/Blog_Single")">Blog Single</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="@Url.Content("~/Portfolio/Portfolio_Masonry")">product</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="@Url.Content("~/Portfolio/Portfolio_Masonry")">-Portfolio Masonry</a></li>
+                                        <li><a href="@Url.Content("~/Portfolio/Portfolio_Dribbble")">-Portfolio Dribbble</a></li>
+                                        <li><a href="@Url.Content("~/Portfolio/Welfare_Goods")">-Welfare goods</a></li>
+                                        <li><a href="@Url.Content("~/Portfolio/Dribbble")">-Portfolio Dribbble</a></li>
+                                    </ul>
+                                </li>                          
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <div class="hidden-xs">
+                        <div class="menu-social-media">
+                            <ul>
+                                <li><a href="#"><i class="iconmoon-facebook"></i></a></li>
+                                <li><a href="#"><i class="iconmoon-twitter"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-information">
+                            <ul>
+                                <li><span>T:</span> 003 124 115</li>
+                                <li><span>E:</span> info@mail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Menu Hamburger (Default) -->
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="slider-container">
+        <div class="slider-control left inactive"></div>
+        <div class="slider-control right"></div>
+        <ul class="slider-pagi"></ul>
+        <div class="slider">
+            <div class="slide slide-0 active">
+                <div class="slide__bg" style="background-image: url(../../Assets/img/full-slider/image_1.jpg);"></div>
+                <div class="slide__content">
+                    <svg class="slide__overlay" viewBox="0 0 1 1" preserveAspectRatio="xMaxYMax slice">
+                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                    </svg>
+                    <div class="slide__text">
+                        <h2 class="slide__text-heading">THINK<span class="border-text">CREATIVE</span></h2>
+                        <p>
+                            THE DESIGN IS NOT THE ONLY ONE
+                            <br> WHO CAN SEE, BUT IS ALSO A FUNCTION.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide slide-1">
+                <div class="slide__bg" style="background-image: url(../../Assets/img/full-slider/image_2.jpg);"></div>
+                <div class="slide__content">
+                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                    </svg>
+                    <div class="slide__text">
+                        <h2 class="slide__text-heading"><span class="border-text">MODERN</span>SLIDER</h2>
+                        <p>VOLUPTATUM MOLESTIAS RECUSANDAE QUAS REPREHENDERIT.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide slide-2">
+                <div class="slide__bg" style="background-image: url(../../Assets/img/full-slider/image_3.jpg);"></div>
+                <div class="slide__content">
+                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                    </svg>
+                    <div class="slide__text">
+                        <h2 class="slide__text-heading">We accomplish individual projects</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide slide-3">
+                <div class="slide__bg" style="background-image: url(../../Assets/img/full-slider/image_4.jpg);"></div>
+                <div class="slide__content">
+                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                    </svg>
+                    <div class="slide__text">
+                        <h2 class="slide__text-heading">New projects <span>Modern</span></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide slide-4">
+                <div class="slide__bg" style="background-image: url(../../Assets/img/full-slider/image_1.jpg);"></div>
+                <div class="slide__content">
+                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                    </svg>
+                    <div class="slide__text">
+                        <h2 class="slide__text-heading"><span>New projects And Modern</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="~/Assets/js/vendor/jquery-1.11.2.min.js"></script>
+    <script data-pace-options='{ "ajax": false }' src="~/Assets/js/vendor/pace.min.js"></script>
+    <script src="~/Assets/js/vendor/bootstrap.min.js"></script>
+    <script src="~/Assets/js/vendor/classie.js"></script>
+    <script src="~/Assets/js/vendor/isotope.pkgd.min.js"></script>
+    <script src="~/Assets/js/vendor/jquery.velocity.min.js"></script>
+    <script src="~/Assets/js/vendor/jquery.kenburnsy.min.js"></script>
+    <script src="~/Assets/js/vendor/textslide.js"></script>
+    <script src="~/Assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="~/Assets/js/vendor/tabs.js"></script>
+    <script src="~/Assets/js/ef-slider.js"></script>
+    <script src="~/Assets/js/vendor/owl.carousel.min.js"></script>
+    <script src="~/Assets/js/vendor/jquery.magnific-popup.min.js"></script>
+    <script src="~/Assets/js/vendor/jquery.social-buttons.min.js"></script>
+    <script src="~/Assets/js/vendor/wow.min.js"></script>
+    <script src="~/Assets/js/main.js"></script>
+    <script src="~/Assets/js/ajax.js"></script>
+</body>
+</html>
+
+
