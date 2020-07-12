@@ -1,0 +1,511 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>OAK - HTML Theme</title>
+    <meta name="description" content="">
+    <meta name="msapplication-tap-highlight" content="yes" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" />
+
+
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lekton:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href="~/Assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Assets/css/owl.carousel.css" rel="stylesheet" />
+    <link href="~/Assets/css/owl.theme.css" rel="stylesheet" />
+
+    <link href="~/Assets/css/jquery.kenburnsy.css" rel="stylesheet" />
+    <link href="~/Assets/css/animate.css" rel="stylesheet" />
+
+    <link href="~/Assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    <link href="~/Assets/css/iconmoon.css" rel="stylesheet" />
+    <link href="~/Assets/css/et-line.css" rel="stylesheet" />
+    <link href="~/Assets/css/ionicons.css" rel="stylesheet" />
+
+    <link href="~/Assets/css/magnific-popup.css" rel="stylesheet" />
+
+
+    <link href="~/Assets/css/tabs.css" rel="stylesheet" />
+    <link href="~/Assets/css/tabstyles.css" rel="stylesheet" />
+
+
+    <link href="~/Assets/css/loader-1.css" rel="stylesheet" />
+    <link href="~/Assets/css/main.css" rel="stylesheet" />
+    <link href="~/Assets/css/responsive.css" rel="stylesheet" />
+
+    <link rel="icon" href="~/favicon.ico" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    @*//匯入bootstrap*@
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    @*//匯入jQuery*@
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    @*//匯入bootstrap javascript*@
+    <script src="~/Assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+
+
+</head>
+<body>
+
+
+
+
+    <div class="container">
+        <div class="header-page ef-parallax-bg" style="background-image:url(../../Assets/img/portfolio-header.jpg)">
+            <div class="col-md-6 col-md-offset-6">
+                <div class="row">
+                    <div class="inner-content">
+                        <div class="header-content">
+                            <h1>Portfolio</h1>
+                            <hr>
+                            <p>Everything created in simple way</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="container margin-top">
+        <div class="portfolio-wrapper">
+            <button class="nav">
+                <span class="icon-container">
+                    <span class="line line01"></span>
+                    <span class="line line02"></span>
+                    <span class="line line03"></span>
+                    <span class="line line04"></span>
+                </span>
+            </button>
+            <div class="works-filter">
+                <a href="javascript:void(0)" class="filter active" data-filter="mix">All</a>
+                <a href="javascript:void(0)" class="filter" data-filter="branding">Branding</a>
+                <a href="javascript:void(0)" class="filter" data-filter="web">Web Design</a>
+                <a href="javascript:void(0)" class="filter" data-filter="graphic">Graphic Design</a>
+            </div>
+            <div class="js-masonry">
+                <div class="row" id="work-grid">
+                    <!-- Begin of Thumbs Portfolio -->
+                    <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
+                        <div class="img home-portfolio-image">
+                            <img src="~/Assets/img/home-portfolio/img_1.jpg" alt="Portfolio Item">
+                            <div class="overlay-thumb">
+                                <a href="javascript:void(0)" class="like-product">
+                                    <i class="ion-ios-heart-outline"></i>
+                                    <span class="like-product">Liked</span>
+                                    <span class="output">250</span>
+                                </a>
+                                <div class="details">
+                                    <span class="title">STYLE FASHION</span>
+                                    <span class="info">NEW BAG & STYLE FASHION</span>
+                                </div>
+                                <span class="btnBefore"></span>
+                                <span class="btnAfter"></span>
+                                <a class="main-portfolio-link" href="@Url.Content("~/Homepage/Single_Project")"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 mix web">
+                        <div class="img home-portfolio-image">
+                            <img src="~/Assets/img/home-portfolio/img_2.jpg" alt="Portfolio Item">
+                            <div class="overlay-thumb">
+                                <a href="javascript:void(0)" class="like-product">
+                                    <i class="ion-ios-heart-outline"></i>
+                                    <span class="like-product">Liked</span>
+                                    <span class="output">60</span>
+                                </a>
+                                <div class="details">
+                                    <span class="title">WATCH-J</span>
+                                    <span class="info">NEW TREND FASHION</span>
+                                </div>
+                                <span class="btnBefore"></span>
+                                <span class="btnAfter"></span>
+                                <a class="main-portfolio-link" href="@Url.Content("~/Homepage/Single_Project")"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 mix graphic">
+                        <div class="img home-portfolio-image">
+                            <img src="~/Assets/img/home-portfolio/img_3.jpg" alt="Portfolio Item">
+                            <div class="overlay-thumb">
+                                <a href="javascript:void(0)" class="like-product">
+                                    <i class="ion-ios-heart-outline"></i>
+                                    <span class="like-product">Liked</span>
+                                    <span class="output">1060</span>
+                                </a>
+                                <div class="details">
+                                    <span class="title">STYLE FASHION</span>
+                                    <span class="info">NEW BAG & STYLE FASHION</span>
+                                </div>
+                                <span class="btnBefore"></span>
+                                <span class="btnAfter"></span>
+                                <a class="main-portfolio-link" href="@Url.Content("~/Homepage/Single_Project")"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
+                        <div class="img home-portfolio-image">
+                            <img src="~/Assets/img/home-portfolio/img_4.jpg" alt="Portfolio Item">
+                            <div class="overlay-thumb">
+                                <a href="javascript:void(0)" class="like-product">
+                                    <i class="ion-ios-heart-outline"></i>
+                                    <span class="like-product">Liked</span>
+                                    <span class="output">900</span>
+                                </a>
+                                <div class="details">
+                                    <span class="title">STYLE FASHION</span>
+                                    <span class="info">NEW BAG & STYLE FASHION</span>
+                                </div>
+                                <span class="btnBefore"></span>
+                                <span class="btnAfter"></span>
+                                <a class="main-portfolio-link" href="@Url.Content("~/Homepage/Single_Project")"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
+                        <div class="img home-portfolio-image">
+                            <img src="~/Assets/img/home-portfolio/img_5.jpg" alt="Portfolio Item">
+                            <div class="overlay-thumb">
+                                <a href="javascript:void(0)" class="like-product">
+                                    <i class="ion-ios-heart-outline"></i>
+                                    <span class="like-product">Liked</span>
+                                    <span class="output">979</span>
+                                </a>
+                                <div class="details">
+                                    <span class="title">STYLE FASHION</span>
+                                    <span class="info">NEW BAG & STYLE FASHION</span>
+                                </div>
+                                <span class="btnBefore"></span>
+                                <span class="btnAfter"></span>
+                                <a class="main-portfolio-link" href="@Url.Content("~/Homepage/Single_Project")"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
+                        <div class="img home-portfolio-image">
+                            <img src="~/Assets/img/home-portfolio/img_6.jpg" alt="Portfolio Item">
+                            <div class="overlay-thumb">
+                                <a href="javascript:void(0)" class="like-product">
+                                    <i class="ion-ios-heart-outline"></i>
+                                    <span class="like-product">Liked</span>
+                                    <span class="output">1024</span>
+                                </a>
+                                <div class="details">
+                                    <span class="title">STYLE FASHION</span>
+                                    <span class="info">NEW BAG & STYLE FASHION</span>
+                                </div>
+                                <span class="btnBefore"></span>
+                                <span class="btnAfter"></span>
+                                <a class="main-portfolio-link" href="@Url.Content("~/Homepage/Single_Project")"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
+                        <div class="img home-portfolio-image">
+                            <img src="~/Assets/img/home-portfolio/img_7.jpg" alt="Portfolio Item">
+                            <div class="overlay-thumb">
+                                <a href="javascript:void(0)" class="like-product">
+                                    <i class="ion-ios-heart-outline"></i>
+                                    <span class="like-product">Liked</span>
+                                    <span class="output">2048</span>
+                                </a>
+                                <div class="details">
+                                    <span class="title">STYLE FASHION</span>
+                                    <span class="info">NEW BAG & STYLE FASHION</span>
+                                </div>
+                                <span class="btnBefore"></span>
+                                <span class="btnAfter"></span>
+                                <a class="main-portfolio-link" href="@Url.Content("~/Homepage/Single_Project")"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
+                        <div class="img home-portfolio-image">
+                            <img src="~/Assets/img/home-portfolio/img_8.jpg" alt="Portfolio Item">
+                            <div class="overlay-thumb">
+                                <a href="javascript:void(0)" class="like-product">
+                                    <i class="ion-ios-heart-outline"></i>
+                                    <span class="like-product">Liked</span>
+                                    <span class="output">256</span>
+                                </a>
+                                <div class="details">
+                                    <span class="title">STYLE FASHION</span>
+                                    <span class="info">NEW BAG & STYLE FASHION</span>
+                                </div>
+                                <span class="btnBefore"></span>
+                                <span class="btnAfter"></span>
+                                <a class="main-portfolio-link" href="@Url.Content("~/Homepage/Single_Project")"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
+                        <div class="img home-portfolio-image">
+                            <img src="~/Assets/img/home-portfolio/img_9.jpg" alt="Portfolio Item">
+                            <div class="overlay-thumb">
+                                <a href="javascript:void(0)" class="like-product">
+                                    <i class="ion-ios-heart-outline"></i>
+                                    <span class="like-product">Liked</span>
+                                    <span class="output">256</span>
+                                </a>
+                                <div class="details">
+                                    <span class="title">STYLE FASHION</span>
+                                    <span class="info">NEW BAG & STYLE FASHION</span>
+                                </div>
+                                <span class="btnBefore"></span>
+                                <span class="btnAfter"></span>
+                                <a class="main-portfolio-link" href="@Url.Content("~/Homepage/Single_Project")"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="load-more">
+                <a href="javascript:void(0)" id="load-more"><i class="icon-refresh"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="javascript:void(0)" class="scroll-top" id="scroll-top"><i class="pe-7s-angle-up"></i></a>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+
+
+    </script>
+
+
+    @section endJS{
+
+        <script>
+
+
+            jQuery(document).ready(function ($) {
+
+                //Navigation Sub Menu Triggering
+                jQuery('.menu-item-has-children, .page_item_has_children').hover(function () {
+                    jQuery(this).children('.sub-menu').stop().slideDown(200);
+                },
+                    function () {
+                        jQuery(this).children('.sub-menu').stop().slideUp(200);
+                    });
+
+                //Mobile Menu Open/Close
+                jQuery('#open-mobile-menu').on('click', function () {
+                    var self = jQuery(this);
+                    var mobileMenu = jQuery('.menu-wrap-2');
+
+                    if (mobileMenu.hasClass('is-open')) {
+                        self.removeClass('active');
+                        mobileMenu.removeClass('is-open');
+                    } else {
+                        mobileMenu.addClass('is-open');
+                        self.addClass('active');
+                    }
+                });
+
+                //Dribbble
+                if (jQuery('.dribble-grid').length > 0) {
+                    getDribbbleThumbs();
+                };
+
+                //Menu Right Side
+                if (navigationRight.length > 0) {
+                    Navigation();
+                };
+
+                //Parallax Background on Desktop
+                if (!isMobile.any()) {
+                    jQuery(window).on('scroll', function () {
+                        parallaxScroll();
+                    });
+                };
+
+                // Switch class on filter
+                var showfilter = jQuery('.works-filter');
+                jQuery('button.nav').on('click', function () {
+                    var self = jQuery(this);
+                    self.toggleClass('open');
+                    showfilter.toggleClass('open');
+                });
+
+                //Architecure Slider
+                var archSlider = jQuery('#arch-slider');
+                var prev = jQuery('.prev-slide');
+                var next = jQuery('.next-slide');
+                //Arch slider
+                if (archSlider.length > 0) {
+                    archSlider.owlCarousel({
+                        singleItem: true,
+                        pagination: false,
+                        autoPlay: 5000,
+                        slideSpeed: 300,
+
+                    });
+                    prev.on('click', function () {
+                        archSlider.trigger('owl.prev');
+                    });
+                    next.on('click', function () {
+                        archSlider.trigger('owl.next');
+                    });
+                };
+
+                //Single Project Slider
+                var singleProjectSlider = jQuery('.single-slider');
+                if (singleProjectSlider.length > 0) {
+                    singleProjectSlider.owlCarousel({
+                        singleItem: true,
+                        pagination: false,
+                        autoPlay: 5000,
+                        slideSpeed: 300,
+
+                    });
+                    prev.on('click', function () {
+                        singleProjectSlider.trigger('owl.prev');
+                    });
+                    next.on('click', function () {
+                        singleProjectSlider.trigger('owl.next');
+                    });
+                };
+
+                //Team Slider
+                var teamMembers = jQuery('.team');
+                if (teamMembers.length > 0) {
+                    teamMembers.owlCarousel({
+                        pagination: true,
+                        items: 3,
+                        margin: 20,
+                        autoHeight: true,
+                        itemsDesktop: [1199, 3],
+                        itemsDesktopSmall: [980, 2],
+                        itemsTablet: [768, 2],
+                        itemsMobile: [479, 1]
+                    });
+                };
+
+                //Tabs Slider
+                var tabsSlider = jQuery('#tabs-slider');
+                if (tabsSlider.length > 0) {
+                    tabsSlider.owlCarousel({
+                        singleItem: true,
+                        pagination: false,
+                        autoPlay: 3000,
+                        slideSpeed: 600,
+                    });
+                };
+
+                //Search
+                var wrap = jQuery('.js-ui-search');
+                var close = jQuery('.js-ui-close');
+                var input = jQuery('.js-ui-text');
+                close.on('click', function () {
+                    wrap.toggleClass('open');
+                });
+                input.on('transitionend webkitTransitionEnd oTransitionEnd', function () {
+                    if (wrap.hasClass('open')) {
+                        input.focus();
+                    } else {
+                        return;
+                    }
+                });
+
+                //Finished loader
+                Pace.on("done", function () {
+                    jQuery(".cover").addClass('animated fadeOutRight').fadeOut(1000);
+                });
+
+                //Magnific Popup
+                jQuery('.popup-video').magnificPopup({
+                    type: 'iframe',
+                    closeOnContentClick: true,
+                    closeBtnInside: false,
+                    fixedContentPos: true,
+                    mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+                    image: {
+                        verticalFit: true
+                    },
+                    zoom: {
+                        enabled: true,
+                        duration: 300 // don't foget to change the duration also in CSS
+                    }
+                });
+
+                //Kenburnsy Slides
+                jQuery('#slider-ef').kenburnsy();
+
+                //Scroll Top
+                jQuery('#scroll-top').scrollToTop();
+
+                //Like
+                likeEf();
+
+                //Slider
+                historySlider();
+
+                //Get social sharing
+                getSocialButtons();
+
+                //Init Tabs
+                Tabs();
+
+                //WOW Animation init
+                new WOW().init();
+
+            });
+
+
+
+        </script>
+      
+
+        <script src="~/Assets/js/vendor/jquery-1.11.2.min.js"></script>
+        <script data-pace-options='{ "ajax": false }' src="~/Assets/js/vendor/pace.min.js"></script>
+        <script src="~/Assets/js/vendor/bootstrap.min.js"></script>
+        <script src="~/Assets/js/vendor/classie.js"></script>
+        <script src="~/Assets/js/vendor/isotope.pkgd.min.js"></script>
+        <script src="~/Assets/js/vendor/jquery.velocity.min.js"></script>
+        <script src="~/Assets/js/vendor/jquery.kenburnsy.min.js"></script>
+        <script src="~/Assets/js/vendor/textslide.js"></script>
+        <script src="~/Assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+        <script src="~/Assets/js/vendor/tabs.js"></script>
+        <script src="~/Assets/js/ef-slider.js"></script>
+        <script src="~/Assets/js/vendor/owl.carousel.min.js"></script>
+        <script src="~/Assets/js/vendor/jquery.magnific-popup.min.js"></script>
+        <script src="~/Assets/js/vendor/jquery.social-buttons.min.js"></script>
+        <script src="~/Assets/js/vendor/wow.min.js"></script>
+        <script src="~/Assets/js/main.js"></script>
+        <script src="~/Assets/js/ajax.js"></script>
+        <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+        <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    }
+
+
+</body>
+</html>
+
+
