@@ -1,0 +1,299 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>後臺管理系統</title>
+    <link rel="icon" href="~/Assets/Backstage/favicon.ico" type="image/ico">
+    <meta name="author" content="yinqi">
+    <link href="~/Assets/Backstage/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Assets/Backstage/css/materialdesignicons.min.css" rel="stylesheet" />
+    <link href="~/Assets/Backstage/css/style.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!--左側導覽-->
+
+
+
+
+
+
+    <div class="lyear-layout-web">
+        <div class="lyear-layout-container">
+
+
+
+            <aside class="lyear-layout-sidebar">
+
+                <!-- logo -->
+                <div id="logo" class="sidebar-header">
+                    <a href="@Url.Content("~/MemberManagement/Backstage_Home")"><img src="~/Assets/Backstage/img/logo-sidebar.png" title="LightYear" alt="LightYear" /></a>
+                </div>
+                <div class="lyear-layout-sidebar-scroll">
+                    <nav class="sidebar-main">
+                        <ul class="nav nav-drawer">
+                            <li class="nav-item"> <a href="@Url.Content("~/MemberManagement/Backstage_Home")"><i class="mdi mdi-home"></i> 後臺首頁</a> </li>
+                            <li class="nav-item">
+                                <a href="@Url.Content("~/MemberManagement/Index")">
+                                    <i class="mdi mdi-format-align-justify"></i>會員管理
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+
+
+
+
+
+
+
+
+
+            <!--頭部訊息-->
+            <header class="lyear-layout-header">
+                <nav class="navbar navbar-default">
+                    <div class="topbar">
+                        <div class="topbar-left">
+                            <div class="lyear-aside-toggler">
+                                <span class="lyear-toggler-bar"></span>
+                                <span class="lyear-toggler-bar"></span>
+                                <span class="lyear-toggler-bar"></span>
+                            </div>
+                            <span class="navbar-page-title"> 後台首頁 </span>
+                        </div>
+
+                        <ul class="topbar-right">
+                            <li class="dropdown dropdown-profile">
+                                <a href="javascript:void(0)" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li> <a href="lyear_pages_profile.html"><i class="mdi mdi-account"></i> 個人訊息</a> </li>
+                                    <li> <a href="lyear_pages_edit_pwd.html"><i class="mdi mdi-lock-outline"></i> 修改密碼</a> </li>
+                                    <li class="divider"></li>
+                                    <li> <a href="#"><i class="mdi mdi-logout-variant"></i> 退出登陸</a> </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!--End 頭部訊息-->
+            <!--頁面主要內容-->
+            <main class="lyear-layout-content">
+
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card bg-primary">
+                                <div class="card-body clearfix">
+                                    <div class="pull-right">
+                                        <p class="h6 text-white m-t-0">今日收入</p>
+                                        <p class="h3 text-white m-b-0">102,125.00</p>
+                                    </div>
+                                    <div class="pull-left"> <span class="img-avatar img-avatar-48 bg-translucent"><i class="mdi mdi-currency-cny fa-1-5x"></i></span> </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card bg-danger">
+                                <div class="card-body clearfix">
+                                    <div class="pull-right">
+                                        <p class="h6 text-white m-t-0">用戶總數</p>
+                                        <p class="h3 text-white m-b-0">920</p>
+                                    </div>
+                                    <div class="pull-left"> <span class="img-avatar img-avatar-48 bg-translucent"><i class="mdi mdi-account fa-1-5x"></i></span> </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card bg-success">
+                                <div class="card-body clearfix">
+                                    <div class="pull-right">
+                                        <p class="h6 text-white m-t-0">今日交易數量</p>
+                                        <p class="h3 text-white m-b-0">34</p>
+                                    </div>
+                                    <div class="pull-left"> <span class="img-avatar img-avatar-48 bg-translucent"><i class="mdi mdi-arrow-down-bold fa-1-5x"></i></span> </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card bg-purple">
+                                <div class="card-body clearfix">
+                                    <div class="pull-right">
+                                        <p class="h6 text-white m-t-0">新增留言</p>
+                                        <p class="h3 text-white m-b-0">153 條</p>
+                                    </div>
+                                    <div class="pull-left"> <span class="img-avatar img-avatar-48 bg-translucent"><i class="mdi mdi-comment-outline fa-1-5x"></i></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>每週用戶</h4>
+                                </div>
+                                <div class="card-body">
+                                    <canvas class="js-chartjs-bars"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>交易紀錄</h4>
+                                </div>
+                                <div class="card-body">
+                                    <canvas class="js-chartjs-lines"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>活動訊息</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>項目名稱</th>
+                                                    <th>開始日期</th>
+                                                    <th>截止日期</th>
+                                                    <th>狀態</th>
+                                                    <th>進度</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>設計新主题</td>
+                                                    <td>10/02/2020</td>
+                                                    <td>12/05/2020</td>
+                                                    <td><span class="label label-warning">待定</span></td>
+                                                    <td>
+                                                        <div class="progress progress-striped progress-sm">
+                                                            <div class="progress-bar progress-bar-warning" style="width: 45%;"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </main>
+            <!--End 頁面主要內容-->
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script type="text/javascript" src="~/Assets/Backstage/js/jquery.min.js"></script>
+    <script type="text/javascript" src="~/Assets/Backstage/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/Assets/Backstage/js/perfect-scrollbar.min.js"></script>
+    <script type="text/javascript" src="~/Assets/Backstage/js/main.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('.search-bar .dropdown-menu a').click(function () {
+                var field = $(this).data('field') || '';
+                $('#search-field').val(field);
+                $('#search-btn').html($(this).text() + ' <span class="caret"></span>');
+            });
+        });
+    </script>
+
+
+
+    <script src="~/Assets/Backstage/js/Chart.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function (e) {
+            var $dashChartBarsCnt = jQuery('.js-chartjs-bars')[0].getContext('2d'),
+                $dashChartLinesCnt = jQuery('.js-chartjs-lines')[0].getContext('2d');
+
+            var $dashChartBarsData = {
+                labels: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
+                datasets: [{
+                    label: '註冊用戶',
+                    borderWidth: 1,
+                    borderColor: 'rgba(0,0,0,0)',
+                    backgroundColor: 'rgba(51,202,185,0.5)',
+                    hoverBackgroundColor: "rgba(51,202,185,0.7)",
+                    hoverBorderColor: "rgba(0,0,0,0)",
+                    data: [2500, 1500, 1200, 3200, 4800, 3500, 1500]
+                }]
+            };
+            var $dashChartLinesData = {
+                labels: ['2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014'],
+                datasets: [{
+                    label: '交易資金',
+                    data: [20, 25, 40, 30, 45, 40, 55, 40, 48, 40, 42, 50],
+                    borderColor: '#358ed7',
+                    backgroundColor: 'rgba(53, 142, 215, 0.175)',
+                    borderWidth: 1,
+                    fill: false,
+                    lineTension: 0.5
+                }]
+            };
+
+            new Chart($dashChartBarsCnt, {
+                type: 'bar',
+                data: $dashChartBarsData
+            });
+
+            var myLineChart = new Chart($dashChartLinesCnt, {
+                type: 'line',
+                data: $dashChartLinesData,
+            });
+        });
+    </script>
+
+</body>
+</html>

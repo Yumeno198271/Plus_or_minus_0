@@ -1,0 +1,103 @@
+﻿@using Plusminuszero.Models
+@model LoginViewModel
+
+
+@{
+    Layout = null;
+}
+
+
+
+<link rel='stylesheet' href='https://fontastic.s3.amazonaws.com/tyyroC3qVqR4rWNhyhMTRB/icons.css'>
+<link href="~/Assets/css/style.css" rel="stylesheet" />
+
+
+
+<div class="bg-wrapper">
+    <div class="bg-grad orange active"></div>
+    <div class="bg-grad red"></div>
+    <div class="bg-grad purple"></div>
+    <div class="bg-grad blue"></div>
+    <div class="bg-grad green"></div>
+    <div class="bg-grad yellow"></div>
+</div>
+
+
+@using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+    <div class="login-wrapper">
+        <div class="x-wrapper">
+            <div class="y-wrapper">
+                <div class="title-wrapper">
+                    <h2>歡迎!</h2>
+                    <br>
+                    <h4>請輸入電子郵箱及密碼</h4>
+                </div>
+                <div class="input-box">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger", @style = "color:red" })
+                    @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label", @style = "color:black;font-size:20px" })
+                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger", @style = "color:red" })
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                    <br>
+                    @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label", @style = "color:black;font-size:20px" })
+                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger", @style = "color:red" })
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+
+                    <span class="show-pass icon-eye" title="show characters"></span>
+                </div>
+                <div class="button-wrapper">
+                    <a href="@Url.Content("~/Homepage/Index")">回首頁</a>
+
+
+
+
+
+                    @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                    {
+                    }
+                    @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
+
+
+
+
+
+
+
+                    <input type="submit" value="登入" class="btn btn-default login-btn" style=" border:none;background-color:transparent;" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="~/Assets/js/script.js"></script>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+
